@@ -5,7 +5,7 @@ import ManageServiceData from "../ManageServiceData/ManageServiceData";
 const ManageService = () => {
   const [servicePlan, setServicePlan] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://mysterious-ocean-52360.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServicePlan(data));
   }, []);

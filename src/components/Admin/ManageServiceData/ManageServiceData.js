@@ -6,7 +6,7 @@ const ManageServiceData = (props) => {
   const [display, setDisplay] = useState({ display: "" });
   const { CategoryName, packageName, price, _id } = props.plan;
   const handelDeletePlan = (id) => {
-    fetch("http://localhost:5000/delete/" + id, {
+    fetch("https://mysterious-ocean-52360.herokuapp.com/delete/" + id, {
       method: "DELETE",
     })
       .then((res) => res.json())

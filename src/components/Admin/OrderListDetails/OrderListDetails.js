@@ -11,7 +11,7 @@ const OrderListDetails = ({ order }) => {
       const id = order._id;
       const updateData = {updateStatus, id};
       console.log(updateData);
-      fetch("http://localhost:5000/update/" + id, {
+      fetch("https://mysterious-ocean-52360.herokuapp.com/update/" + id, {
           method: "PATCH",
           headers:{'Content-Type': 'application/json'},
           body: JSON.stringify(updateData)

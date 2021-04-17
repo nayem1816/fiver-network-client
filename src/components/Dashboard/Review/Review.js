@@ -29,7 +29,7 @@ const Review = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     const reviewData = { data, ...loggedInUser, imageUrl };
-    const url = `http://localhost:5000/reviews`;
+    const url = `https://mysterious-ocean-52360.herokuapp.com/reviews`;
     // console.log(mobileData);
     fetch(url, {
       method: "POST",

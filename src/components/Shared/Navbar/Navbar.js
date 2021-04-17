@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 import { userContext } from "../../../App";
 
 const Navbar = () => {
-  const [loggedInUser] = useContext(userContext);
   const [admin, setAdmin] = useState([]);
+  const [loggedInUser] = useContext(userContext);
+
   useEffect(() => {
-    fetch('http://localhost:5000/isAdmin?email=' + loggedInUser.email)
-    .then(res => res.json())
-    .then(data => setAdmin(data[0]))
-  }, [])
-  console.log(admin);
+    fetch("https://mysterious-ocean-52360.herokuapp.com/isAdmin?email=" + loggedInUser.email)
+      .then((res) => res.json())
+      .then((data) => {
+        setAdmin(data);
+      });
+  }, [loggedInUser.email]);
+  const isAdmin = admin[0]?.email;
   return (
     <div className="bg-dark">
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -37,15 +40,26 @@ const Navbar = () => {
               <Link className="nav-link text-white ms-5" to="/home">
                 Home
               </Link>
-              <Link className="nav-link text-white ms-5" to="/admin/orderList">
-                Admin
-              </Link>
-              <Link className="nav-link text-white ms-5" to="/dashboard/bookingList">
-                Dashboard
+              <Link className="nav-link text-white ms-5" to="#">
+                About Us
               </Link>
               <Link className="nav-link text-white ms-5" to="#">
-                Disabled
+                Contact
               </Link>
+              <Link
+                className="nav-link text-white ms-5"
+                to="/dashboard/bookingList"
+              >
+                Dashboard
+              </Link>
+              {isAdmin && (
+                <Link
+                  className="nav-link text-white ms-5"
+                  to="/admin/orderList"
+                >
+                  Admin
+                </Link>
+              )}
               {loggedInUser.name ? (
                 <Link to="/" className="nav-link text-white ms-5">
                   <img

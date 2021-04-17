@@ -15,7 +15,7 @@ const SimpleCardForm = ({ id }) => {
   const [paymentSuccess, setPaymentSuccess] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${id}`)
+    fetch(`https://mysterious-ocean-52360.herokuapp.com/service/${id}`)
       .then((res) => res.json())
       .then((data) => setServicePlan(data));
   }, [id]);
@@ -55,7 +55,7 @@ const SimpleCardForm = ({ id }) => {
         status,
       };
 
-      fetch("http://localhost:5000/addBooking", {
+      fetch("https://mysterious-ocean-52360.herokuapp.com/addBooking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

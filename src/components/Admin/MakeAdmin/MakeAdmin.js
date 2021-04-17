@@ -9,14 +9,16 @@ const MakeAdmin = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/adminEmail", {
+    fetch("https://mysterious-ocean-52360.herokuapp.com/adminEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    })
-    .then((res) => console.log("server res successfully", res));
+    }).then((res) => {
+      console.log("server res successfully", res);
+      alert("Thank You added a new Admin");
+    });
   };
   return (
     <div>

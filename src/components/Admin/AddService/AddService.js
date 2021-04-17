@@ -41,7 +41,7 @@ const AddService = () => {
 
     };
 
-    const url = `http://localhost:5000/addService`;
+    const url = `https://mysterious-ocean-52360.herokuapp.com/addService`;
     // console.log(mobileData);
 
     fetch(url, {

@@ -10,7 +10,7 @@ const Book = () => {
   const [servicePlan, setServicePlan] = useState({});
   // console.log(id);
   useEffect(() => {
-    fetch("http://localhost:5000/service/" + id)
+    fetch("https://mysterious-ocean-52360.herokuapp.com/service/" + id)
       .then((res) => res.json())
       .then((data) => setServicePlan(data));
   }, [id]);
