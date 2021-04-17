@@ -1,25 +1,27 @@
 import React from "react";
-import movieBanner from "../../../images/lifeOfPai.jpg";
+import lifeOfPai from "../../../images/lifeOfPai.jpg";
+import theJongleBook from "../../../images/theJungleBook.jpg";
+import avator from "../../../images/avatar.jpg";
 import MovieCard from "../MovieCard/MovieCard";
 
 const movieList = [
   {
     id: 1,
-    img: movieBanner,
+    img: lifeOfPai,
     name: "Life of pai",
     releaseYear: "2015",
   },
   {
     id: 2,
-    img: movieBanner,
-    name: "Life of pai",
-    releaseYear: "2015",
+    img: avator,
+    name: "Avator",
+    releaseYear: "2016",
   },
   {
     id: 3,
-    img: movieBanner,
-    name: "Life of pai",
-    releaseYear: "2015",
+    img: theJongleBook,
+    name: "The Jungle Book",
+    releaseYear: "2017",
   },
 ];
 

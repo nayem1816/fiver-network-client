@@ -7,7 +7,7 @@ const TestimonialCard = ({ review }) => {
 
   return (
     <div className="col-md-4 mt-3">
-      <div className="card">
+      <div className="card testimonial-card-style">
         <div className="card-body py-5">
           <div className="text-center">
             <img className="review-img rounded-circle" src={review.imageUrl} alt="" />

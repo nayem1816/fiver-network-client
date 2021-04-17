@@ -16,7 +16,8 @@ const OrderList = () => {
           <AdminSidebar></AdminSidebar>
         </div>
         <div className="col-md-10">
-          <div className="">
+          <h2 className="p-3">Order List</h2>
+          <div className="p-2">
             <table className="table">
               <thead>
                 <tr>

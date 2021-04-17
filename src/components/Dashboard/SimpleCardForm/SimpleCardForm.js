@@ -75,8 +75,8 @@ const SimpleCardForm = ({ id }) => {
     <div className="">
       <form onSubmit={handleSubmit}>
         <CardElement />
-        <button className="btn btn-success" type="submit" disabled={!stripe}>
-          Pay {servicePlan.price}
+        <button className="btn btn-success mt-3" type="submit" disabled={!stripe}>
+          Pay with ${servicePlan.price}
         </button>
       </form>
       {paymentError && <p style={{ color: "red" }}>{paymentError}</p>}

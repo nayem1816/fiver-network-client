@@ -2,3 +2,9 @@
     height: 80px;
     width: 80px;
 }
+.testimonial-card-style{
+    transition: all .2s ease-in-out;
+}
+.testimonial-card-style:hover{
+    transform: scale(1.1);
+}

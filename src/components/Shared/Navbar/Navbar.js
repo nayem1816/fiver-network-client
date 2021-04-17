@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { userContext } from "../../../App";
+import './Navbar.css';
 
 const Navbar = () => {
   const [admin, setAdmin] = useState([]);
@@ -18,7 +19,7 @@ const Navbar = () => {
     <div className="bg-dark">
       <nav className="navbar navbar-expand-lg navbar-light container">
         <div className="container-fluid">
-          <Link className="navbar-brand text-white rock-salt" to="/">
+          <Link className="rock-salt logo-style" to="/">
             Fiver Network
           </Link>
           <button
@@ -37,24 +38,24 @@ const Navbar = () => {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav d-flex align-items-center">
-              <Link className="nav-link text-white ms-5" to="/home">
+              <Link className="nav-link text-white ms-5 menu-item-link" to="/home">
                 Home
               </Link>
-              <Link className="nav-link text-white ms-5" to="#">
+              <Link className="nav-link text-white ms-5 menu-item-link" to="#">
                 About Us
               </Link>
-              <Link className="nav-link text-white ms-5" to="#">
+              <Link className="nav-link text-white ms-5 menu-item-link" to="#">
                 Contact
               </Link>
               <Link
-                className="nav-link text-white ms-5"
+                className="nav-link text-white ms-5 menu-item-link"
                 to="/dashboard/bookingList"
               >
                 Dashboard
               </Link>
               {isAdmin && (
                 <Link
-                  className="nav-link text-white ms-5"
+                  className="nav-link text-white ms-5 menu-item-link"
                   to="/admin/orderList"
                 >
                   Admin
@@ -72,7 +73,7 @@ const Navbar = () => {
               ) : (
                 <Link to="/login" className="nav-link text-white ms-5">
                   <button className="btn login-btn-style">
-                    <h5 className="text-light mt-2">Login</h5>
+                    <h5 className="mt-2 menu-item-link">Login</h5>
                   </button>
                 </Link>
               )}
