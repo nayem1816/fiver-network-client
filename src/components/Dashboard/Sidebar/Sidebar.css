@@ -1,0 +1,7 @@
+.menu-item-link{
+    text-decoration: none;
+    color: white;
+}
+.menu-item-link:hover{
+    color: rgb(255, 5, 5);
+}

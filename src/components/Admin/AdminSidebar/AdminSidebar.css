@@ -1,0 +1,15 @@
+.admin-sidebar{
+    height: 100vh;
+    background-color: black !important;
+}
+.menu-item{
+    margin-top: 80px;
+    font-size: 25px;
+}
+.menu-item-link{
+    text-decoration: none;
+    color: white;
+}
+.menu-item-link:hover{
+    color: rgb(255, 5, 5);
+}

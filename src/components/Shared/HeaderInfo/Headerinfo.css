@@ -1,0 +1,8 @@
+.header-info{
+    background-color: rgb(246, 234, 220);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -5%;
+    position: relative;
+    z-index: 12;
+}

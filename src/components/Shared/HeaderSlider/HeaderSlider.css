@@ -1,0 +1,29 @@
+
+.carousel-caption-text {
+    position: absolute;
+    top:35%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+}
+.blur-img{
+    filter: blur(1px);
+  -webkit-filter: blur(1px);
+  opacity: 0.9;
+}
+.carousel-caption-text h1{
+  font-size: 50px;
+  
+}
+.carousel-caption-text p{
+  font-size:20px;
+  margin-top: 20px;
+}
