@@ -2,9 +2,9 @@
 
 # Project Live Link: https://fiver-network.web.app/
 
-# Project Client Code Link: https://github.com/Porgramming-Hero-web-course/complete-website-client-nayem1816
+# Project Client Code Link: https://github.com/nayem1816/fiver-network-client
 
-# Project Server Code Link: https://github.com/Porgramming-Hero-web-course/complete-website-server-nayem1816
+# Project Server Code Link: https://github.com/nayem1816/fiver-network-server
 
 # Using 
  * using react
